@@ -1,7 +1,3 @@
-.description {
-
-}
-
 .description__title {
   margin: 0;
   margin-bottom: 20px;
@@ -40,10 +36,11 @@
   background-color: lightgray;
 }
 
-@media (min-width: 1366px) {
-  .description {
-  }
+.description__mark {
+  color: red;
+}
 
+@media (min-width: 1366px) {
   .description__title {
     margin: 0;
     margin-bottom: 30px;
@@ -75,13 +72,15 @@
     top: 0;
     left: 0;
     display: none;
+  }
+
+  .description__mark {
+    color: red;
   }
 }
 
-@media (min-width: 1440px) {
-  .description {
-  }
 
+@media (min-width: 1440px) {
   .description__title {
     margin: 0;
     margin-bottom: 30px;
@@ -112,5 +111,8 @@
     top: 0;
     left: 0;
     display: none;
+  }
+  .description__mark {
+    color: red;
   }
 }
