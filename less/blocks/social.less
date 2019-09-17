@@ -1,0 +1,78 @@
+.social {
+  display: flex;
+  width: 355px;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.social__link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 40px;
+  border-radius: 50%;
+  font-size: 0;
+
+  background-image: url(../img/whatsapp.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  &--telegram {
+    background-image: url(../img/telegram.png);
+  }
+
+  &--linkedin {
+    background-image: url(../img/linkedin.svg);
+  }
+
+  &--email {
+    background-image: url(../img/email.png);
+    margin-right: 0;
+  }
+}
+
+.social__link:hover {
+  background-color: red;
+  border-radius: 3px;
+  transition-duration: 600ms;
+}
+
+@media (min-width: 1440px) {
+  .social {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .social__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+    border-radius: 50%;
+    font-size: 0;
+
+    background-image: url(../img/whatsapp.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    &--telegram {
+      background-image: url(../img/telegram.png);
+    }
+
+    &--linkedin {
+      background-image: url(../img/linkedin.svg);
+    }
+
+    &--email {
+      background-image: url(../img/email.png);
+    }
+  }
+
+  .social__link:hover {
+    background-color: red;
+    border-radius: 3px;
+    transition-duration: 600ms;
+  }
+}
