@@ -34,9 +34,61 @@
 }
 
 
+<<<<<<< HEAD
 @media (min-width: 1440px) {
   .page-footer {
     position: fixed;
+=======
+@media (min-width: 1366px) {
+  .page-footer {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 50px 0;
+
+    &--works {
+      position: relative;
+      margin: 0 auto;
+    }
+  }
+
+  .page-footer__title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .page-footer__title::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #222222;
+    animation-name: linefooter;
+    animation-duration: 1500ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+
+
+  @keyframes linefooter {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-footer {
+    position: relative;
+>>>>>>> 236805040d7b49b70bc20050fd2abe2bb6caa438
     bottom: 0;
     right: 0;
     left: 0;
